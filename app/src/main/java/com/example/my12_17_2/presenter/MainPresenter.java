@@ -20,7 +20,7 @@ public class MainPresenter extends BasePresenter<MainInterface.View> implements 
         model.requestNew(URLService.New_list, new ICallBack<NewBean>() {
             @Override
             public void onSuccess(NewBean newBean) {
-                
+                Iview.getNew(newBean);
             }
 
             @Override

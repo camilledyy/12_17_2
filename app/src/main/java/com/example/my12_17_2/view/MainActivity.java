@@ -3,6 +3,7 @@ package com.example.my12_17_2.view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import com.example.my12_17_2.R;
 import com.example.my12_17_2.base.BaseActivity;
@@ -34,6 +35,6 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainInt
 
     @Override
     public void getNew(NewBean newBean) {
-
+        Log.e("TAG", "getNew: "+newBean);
     }
 }
