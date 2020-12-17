@@ -14,7 +14,7 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainInt
 
     @Override
     protected void initData() {
-
+        presenter.getNew();
     }
 
     @Override
@@ -29,7 +29,7 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainInt
 
     @Override
     protected int getLayoutId() {
-        return 0;
+        return R.layout.activity_main;
     }
 
     @Override
