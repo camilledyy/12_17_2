@@ -8,6 +8,9 @@ import androidx.appcompat.app.AppCompatActivity;
 public abstract class BaseActivity<T extends BasePresenter> extends AppCompatActivity {
     public T presenter;
 
+    //主分支
+
+    //这是dve测试分支
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
