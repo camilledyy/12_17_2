@@ -5,9 +5,10 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public abstract class BaseActivity<T extends BasePresenter> extends AppCompatActivity {
+public abstract class BaseActivity<T extends BasePresenter> extends AppCompatActivity implements BaseView{
     public T presenter;
 
+   
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,4 +28,12 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
     protected abstract T getPresenter();
 
     protected abstract int getLayoutId();
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (presenter!=null){
+            presenter.deatchView();
+        }
+    }
 }

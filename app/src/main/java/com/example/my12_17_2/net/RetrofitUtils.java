@@ -2,8 +2,8 @@ package com.example.my12_17_2.net;
 
 import com.example.my12_17_2.api.ApiService;
 import com.example.my12_17_2.api.IApiWorkInterface;
-import com.example.my12_17_2.api.URLService;
-import com.example.my12_17_2.interfaces.ICallBack;
+import com.example.my12_17_2.interfaces.URLService;
+import com.example.my12_17_2.api.ICallBack;
 import com.google.gson.Gson;
 
 import java.io.IOException;

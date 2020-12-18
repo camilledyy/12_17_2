@@ -1,4 +1,4 @@
-package com.example.my12_17_2.api;
+package com.example.my12_17_2.interfaces;
 
 public interface URLService {
     String BASE_URL="http://cdwan.cn:7000/";

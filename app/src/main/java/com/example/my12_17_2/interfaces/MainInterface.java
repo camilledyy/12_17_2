@@ -1,5 +1,7 @@
 package com.example.my12_17_2.interfaces;
 
+import com.example.my12_17_2.api.ICallBack;
+import com.example.my12_17_2.base.BaseModel;
 import com.example.my12_17_2.base.BaseView;
 import com.example.my12_17_2.bean.NewBean;
 
@@ -12,7 +14,7 @@ public interface MainInterface {
         void getNew();
     }
 
-    interface Model{
-        <T> void requestNew(String url,ICallBack<T> callBack);
+    interface Model extends BaseModel {
+        <T> void requestNew(String url, ICallBack<T> callBack);
     }
 }

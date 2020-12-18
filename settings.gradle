@@ -1,2 +1,3 @@
+include ':mvplibrary'
 include ':app'
 rootProject.name = "My12_17_2"

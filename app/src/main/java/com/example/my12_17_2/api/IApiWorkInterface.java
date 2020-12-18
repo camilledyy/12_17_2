@@ -1,7 +1,5 @@
 package com.example.my12_17_2.api;
 
-import com.example.my12_17_2.interfaces.ICallBack;
-
 import java.util.HashMap;
 
 public interface IApiWorkInterface {
