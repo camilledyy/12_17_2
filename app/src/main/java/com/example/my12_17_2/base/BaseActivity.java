@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public abstract class BaseActivity<T extends BasePresenter> extends AppCompatActivity implements BaseView{
     public T presenter;
 
-   
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
